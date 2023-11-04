@@ -4,12 +4,11 @@ require('dotenv').config();
 const TelegramBot = require('node-telegram-bot-api');
 const path = require('path');
 require('dotenv').config();
-const { auth } = require('../config/zoom');
 
 const botToken = process.env.TOKENBOT;
 let accessToken = null;
 const bot = new TelegramBot(botToken, { polling: true });
-const chatid = "-4023877389"
+const chatid = process.env.ALLOWED_CHAT_ID
 
 async function getRecordings() {
     console.log('getRecordings')

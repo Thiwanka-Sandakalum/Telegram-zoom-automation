@@ -12,6 +12,10 @@ const redirectUri = process.env.ZOOM_REDIRECT_URI;
 
 const apiRouter = express.Router();
 
+apiRouter.get('/',(req,res)=>{
+    res.send("Wellcome to zoomgram")
+})
+
 apiRouter.route('/zoom')
     .get(async (req, res) => {
         try {
