@@ -2,12 +2,11 @@ const axios = require('axios');
 const fs = require('fs');
 require('dotenv').config();
 const TelegramBot = require('node-telegram-bot-api');
-const dotenv = require('dotenv');
 const path = require('path');
-dotenv.config();
+require('dotenv').config();
 const { auth } = require('../config/zoom');
 
-const botToken = process.env.TOKENBOT || '6709443750:AAEaTs6WFXDaB5fG8tLfRGxJ4oWV2McUtYM';
+const botToken = process.env.TOKENBOT;
 let accessToken = null;
 const bot = new TelegramBot(botToken, { polling: true });
 const chatid = "-4023877389"
