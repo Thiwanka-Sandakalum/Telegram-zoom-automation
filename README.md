@@ -30,9 +30,3 @@ Before using this automation system, ensure you have the following:
 - Telegram account and a Telegram bot token
 - Node.js installed on your machine
 
-## Setup
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/zoom-telegram-automation.git
